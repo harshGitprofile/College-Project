@@ -1,0 +1,683 @@
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1
+{
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+
+}
+
+h2
+{
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+    
+}
+
+h4{
+    font-size: 20px;
+    color: #222;
+}
+
+h6
+{
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p
+{
+    font-size: 16px;
+    color:#465b52;
+    margin:15px 0 20px 0;
+}
+
+.section-p1
+{
+    padding :40px 80px;
+}
+
+body
+{
+    width:100%;
+}
+
+/* ...existing code... */
+#header {
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+    position: relative;
+    background: #fff;
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+    object-fit: contain;
+    cursor: pointer;
+    display: block;
+    margin:0;
+    padding:0; 
+    /* Ensures logo stays at top left */
+    
+}
+/* ...existing code... */
+
+#header
+{
+    display: flex; /* */
+    align-items: center;
+    justify-content: space-between;
+    padding:20px 80px;
+    background: #E3E6F3;
+    box-shadow:0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+
+    
+}
+
+#navbar
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+#navbar li
+{
+    list-style: none;
+    padding:0 20px;/*top,botton 0 ,,,left,right 20px*/
+
+
+}
+
+#navbar li a
+{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600px;
+    color:#1a1a1a;
+    transition: 0.4s ease;
+    
+}
+
+
+
+#navbar li a:hover,
+#navbar li a.active /* active page with uniq color */
+{
+    color:#088178;
+
+
+}
+
+#mobile
+{
+    display: none;
+    align-items: center;
+    
+}
+
+#close
+{
+    display: none;
+}
+
+
+
+
+
+
+#hero
+{
+    background-image: url("image/bodhitemple.png");
+    height:90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0%;
+    padding:0 80px;
+    display :flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 40px;
+
+
+}
+
+#hero h4
+{
+     padding-bottom: 15px;
+}
+
+#hero h1
+{
+     color:#088178;
+     
+}
+
+#hero p
+{
+     color:rgb(0, 0, 0);
+     font-size: x-large;
+}
+#hero h4,
+#hero h2,
+#hero h1 {
+    position: relative;
+    top: -3cm;
+    font-family: Open Sans;
+}
+
+.imagee
+{
+
+    height: 130px;
+    object-fit: cover;
+    border-radius: 15px;
+
+    
+}
+
+#feature .fe-box
+{
+    width: 220px;
+    height: 220px;
+    text-align: center;
+    padding: 25px 15px;
+    border: 1px solid #cce7d0;
+    border-radius: 10px;
+    margin: 15px 0;
+    overflow: hidden;
+    background-color: rgb(199, 217, 217);
+
+
+
+}
+
+#feature .fe-box h6 {
+    font-size: 16px;
+    margin-top: 10px;
+    word-break: break-word;
+    white-space: normal;
+    overflow-wrap: break-word;
+    width: 100%;
+    text-align: center;
+}
+/* ...existing code... */
+
+#feature .fe-box:hover
+{
+     box-shadow: 10px 10px 54px rgba(23, 14, 190, 0.1);
+
+
+}
+
+#feature .fe-box h6 
+{
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+    background-color: #fddde4;
+}
+
+#feature .fe-box img
+{
+    width:100%;
+    margin-bottom: 10px;
+
+}
+
+
+#feature
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+
+#feature .fe-box:nth-child(2) h6
+{
+    background-color: rgb(211, 167, 136);
+}
+
+#feature .fe-box:nth-child(3) h6
+{
+    background-color: rgb(201, 132, 191);
+}
+
+#feature .fe-box:nth-child(4) h6
+{
+    background-color: rgb(147, 138, 131);
+}
+
+#feature .fe-box:nth-child(5) h6
+{
+    background-color: rgb(175, 181, 128);
+}
+
+#feature .fe-box:nth-child(6) h6
+{
+    background-color: rgb(152, 124, 188);
+}
+
+
+#product1 {
+    text-align: center;
+}
+
+#product1 .pro
+{
+     width:25px;
+     min-width: 300px;
+     padding: 23px 32px;
+     border: 2px solid #B5C18C;
+     border-radius: 25px;
+     background: linear-gradient(to right, #e0f7fa, #f1f8e9);
+     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15), 
+            0 0 20px rgba(173, 216, 230, 0.6);
+
+     margin: 15px 0;
+     transition: 0.2s ease;
+
+}
+
+#product1 .pro img
+{
+    width: 100%;
+    border-radius: 20px;
+}
+
+#product1 .pro:hover
+{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+#product1 .pro .des
+{
+  text-align:start;
+  padding: 10px 0;
+}
+
+#product1 .pro .des span
+{
+    color:#0d0f6f;
+    font-size: 20px;
+    font-style: bold;
+
+}
+
+#product1  .pro-container
+{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+   
+}
+
+.welcomename{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:20px;
+    color: #fff;
+    margin-left:10px;
+    
+    
+}
+
+
+footer
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: hsla(210,100%,50%,0.4);
+    border-radius: 20px;
+    font-size: 25px;
+    
+}
+
+
+footer .col
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;/*arrange elements vertical if column */
+    margin-bottom: 20px;
+}
+
+footer h4
+{
+    font-size: 14px;
+    padding-bottom: 20px;
+
+}
+
+footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color:#222;
+    margin-bottom:10px;
+}
+
+footer a:hover{
+    color: brown;
+    transition: 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#followus{
+    padding-top: 1rem;
+}
+
+#copywright{
+    margin-top: 10rem;
+    margin-right: 29rem;
+    font-weight: bold;
+    
+    
+} 
+
+
+/*media queery for tablet similar devices */
+
+ @media (max-width: 799px) {
+
+    .section-p1{
+        padding: 40px 40px;
+       }
+       
+   #navbar {
+       flex-direction: column;
+       align-items: flex-start;
+       display: flex;
+       justify-content: flex-start;  
+       position: fixed;
+       top: 0;
+       right: -300px;
+       height: 100vh;
+       width: 300px; 
+       background-color: #E3E6F3;
+       box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+       padding:80px 0 0 10px;
+       transition: 0.3s;
+    }
+
+    #navbar li {
+       margin-bottom: 30px;
+    }
+
+
+    #navbar.active {
+         right: 0;
+    }
+
+
+    #mobile {
+
+        display: flex;
+        align-items: center;
+    }
+
+    #close
+    {
+        display:initial;/*This line makes the element visible
+         if it was previously hidden.*/
+         position: absolute;
+        top: 30px;
+        left: 30px;
+        font-size: 20px;
+        color: #222;
+
+    }
+
+    #hero{
+        height: 70vh;
+        padding: 0 80px;
+        background-position: top 30% right 30%;
+    }
+
+    #features{
+        justify-content: center;
+    }
+
+   #feature.fe-box{ 
+    margin: 15px 15px;
+
+   }
+  
+} 
+/*            XXX               */
+
+/* ... existing code ... */
+
+/* media query for mobile-similar smaller screen devices */
+@media (max-width: 400px) {
+
+    .section-p1 {
+        padding: 20px 15px;
+    }
+
+    #navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        display: flex;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -250px;
+        height: 100vh;
+        width: 250px;
+        background-color: #E3E6F3;
+        box-shadow: 0 30px 40px rgba(0, 0, 0, 0.1);
+        padding: 60px 0 0 10px;
+        transition: 0.3s;
+    }
+
+    #navbar li {
+        margin-bottom: 20px;
+    }
+
+    #navbar.active {
+        right: 0;
+    }
+
+    #mobile {
+        display: flex;
+        align-items: center;
+    }
+
+    #close {
+        display: initial;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        font-size: 18px;
+        color: #222;
+    }s
+
+    #hero {
+        height: 60vh;
+        padding: 0 20px;
+        background-position: top 20% right 30%;
+    }
+
+    #features {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #feature.fe-box {
+        margin: 10px 0;
+        width: 90%;
+    }
+}
+
+
+
+/* media query for mobile-similar smaller screen devices */
+
+/* media query for mobile-similar smaller screen devices */
+
+#page-header
+{
+    background-image: url("image/bodhitemple.png");
+    height:90vh;
+    width: 100%;
+    background-size: cover;
+    color: #088178;
+    background-position: top 25% right 0%;
+    padding:0 80px;
+    display :flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 40px;
+
+
+}
+
+#district {
+    display: inline-block;
+    color: #088178;
+    padding: 10px 20px;
+    background-color: #e0f7fa;
+    border: 0px solid #088178;
+    border-radius: 10px;
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    display: flex;
+}
+
+
+/* css for one district of onetemp */
+
+
+#prodetails .single-pro-image{
+    width: 40%;
+    margin-right: 50px;
+    padding-left: 10px;
+    background-size: cover;
+    
+}
+
+.small-img-group{
+    display: flex;
+    justify-content:space-between;
+    padding-top: 5px;
+
+ 
+}
+
+
+.small-img-col
+{
+    flex-basis: 24%;
+    cursor: pointer;
+    background-size: cover;                 
+             
+  
+
+}
+
+#prodetails{
+    display: flex;
+    padding-left: 10px;
+    border-radius: 10px;
+    
+}
+
+#prodetails .single-pro-details{
+    width: 50%;
+    padding-top: 30px; 
+}
+
+
+#prodetails .single-pro-details h2{
+    font-size: 26px;
+}
+
+.single-pro-details span{
+    font-size:20px;
+    text-align:justify;
+    line-height: 30px;
+    
+    
+    
+}
+
+.dis-name
+{
+    padding-left:20px;
+    font-size: 30px;
+    background-color:#107896;
+    color:white;
+    position:sticky;
+}
+
+
+/* blog page styling */
+/* page header is also defined at line 557 */
+
+.blog-header{
+
+    background-image:url("image/blog.front.png");
+    color: #088178;
+    margin-top:20px;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 30px; /* Adjust this value as needed */
+    padding-top: 20px;
+    box-sizing: border-box;
+    
+
+    
+    
+
+}
+
+
+
+
+
+
+
+
+
