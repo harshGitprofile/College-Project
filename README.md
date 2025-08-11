@@ -1,2 +1,2 @@
 # College-Project
-Read and suggest any kind or changes or modification if u want..
+Read and suggest any kind of changes or modification if u want..
